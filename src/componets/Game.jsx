@@ -9,7 +9,7 @@ function Game() {
     const navigator = useNavigate();
 
     // Letras que el usuario tendra disponibles para completar la frase
-    const lettersToChoose = "ABCDEFGHIJKLMNÑOPQRSTUVXYZ"
+    const lettersToChoose = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
     // Con split estamos poninendo cada letra en una poscion de un array
     const ltcArray = lettersToChoose.split("");
 
@@ -112,7 +112,7 @@ function Game() {
                     {questions[randomQuestion].question}
                 </div>
                 <div className="images">                    
-                    <img src={process.env.PUBLIC_URL + `/media/el_ahorcado${image}.png`} alt="Imagen" />
+                    <img src={`/media/el_ahorcado${image}.png`} alt="Imagen" />
                 </div>
             </section>
 

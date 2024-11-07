@@ -8,7 +8,7 @@ import { BrowserRouter } from 'react-router-dom';
 // Asegúrate de usar la propiedad basename en BrowserRouter
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter basename="/hangman-game">
+  <BrowserRouter>
     <App />
   </BrowserRouter>
 );
