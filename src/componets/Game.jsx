@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useProveider } from "./context/Context";
 
 function Game() {
-    
+
     // Para la navegacion
     const navigator = useNavigate();
 
@@ -111,8 +111,8 @@ function Game() {
                     {/* Aca se mostrara la pregunta */}
                     {questions[randomQuestion].question}
                 </div>
-                <div className="images">
-                    <img src={`/media/el_ahorcado${image}.png`} alt="Imagen" />
+                <div className="images">                    
+                    <img src={process.env.PUBLIC_URL + `/media/el_ahorcado${image}.png`} alt="Imagen" />
                 </div>
             </section>
 
