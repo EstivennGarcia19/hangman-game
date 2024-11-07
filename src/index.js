@@ -4,16 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-// Comentamos la lnea de strictMode para evitar posibles confuciones o erroes a futuri
 
+// Asegúrate de usar la propiedad basename en BrowserRouter
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-	// <React.StrictMode>
-	<BrowserRouter>
-		<App />
-	</BrowserRouter>
-
-	// </React.StrictMode>
+  <BrowserRouter basename="/hangman-game">
+    <App />
+  </BrowserRouter>
 );
 
 reportWebVitals();
